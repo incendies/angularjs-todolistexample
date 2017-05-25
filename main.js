@@ -6,10 +6,8 @@ app.controller("todolistcontroller", function($scope) {
 				{"name": "justdoit1", "result": false },
 				{"name": "justdoit2", "result": false },
 				{"name": "justdoit3", "result": true },
-				{"name": "justdoit4", "result": false }
-				
+				{"name": "justdoit4", "result": false }				
 		];
-
 		$scope.NewTodo = function () {
 			$scope.todos.push({
 				"name": $scope.todo,
