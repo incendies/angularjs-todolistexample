@@ -1,0 +1,21 @@
+#todolist {
+		width: 	750px;
+		margin: 200px auto;
+}
+
+.okey {
+	color: #ff0000;
+	text-decoration: line-through;
+}
+
+.li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="todolistapp">
+<head>
+	<title>AngularJS Todo List Example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="todolist" ng-controller="todolistcontroller">
+	
+   <ul>
+   	<li ng-repeat="todo in todos">
+   		<input type="checkbox" ng-model="todo.result"/>
+   		<span ng-class="{'okey.:todo.result'}"> {{ todo.name }}</span>
+   		
+   	</li>
+   </ul>
+
+   <form ng-submit="NewTodo()">
+   	<input type="text" ng-model="todo" class="form-control" placeholder="Add Job"/>
+   	<button class="result">Add</button>
+   	<p><button ng-click="DeleteTodos()">Remove</button></p>
+
+   </form>
+
+
+</div>
+
+</body>
+</html>
