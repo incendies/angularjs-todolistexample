@@ -22,7 +22,7 @@ app.controller("todolistcontroller", function($scope) {
 			$scope.DeleteTodos= function () {
 				$scope.todos = $scope.todos.filter(function(item) {
 					return !item.result;	
-				});	
+				});	 
 			}
 
 });
